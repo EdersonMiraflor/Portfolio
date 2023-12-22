@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="mylogo.jpg">
+    <!--Internal Css Styling-->
+</head>
+
+<body>
+
+<!--Navigation Bar-->
+  <div class="NB">
+      <li><a href="index">Home</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="Contact">Contact</a></li>
+  </div> 
+<!--Website Logo-->
+   <div><img src="mylogo.jpg" class="logo"> </div>        
+    <br><br><br>
+<!--Tabs-->
+    <div class="tab">
+      <h1 id="projects">My Projects</h1>
+      <strong style="color: black;">(Point Cursor in the Image to see Detail & Click image toclose Enlarge Image)</strong>
+    <div class="container">
+      <input id="tab-1" type="radio" name="tabs" checked>
+            <label for="tab-1">Back End Project</label>
+     <input id="tab-2" type="radio" name="tabs">
+            <label for="tab-2">Front End Project</label>
+      <input id="tab-3" type="radio" name="tabs">
+            <label for="tab-3">Other Projects</label>
+  <!--Tabs Images-->
+      <div class="content">
+        <div id="content-1">
+         <h2>Back End Projects</h2>
+              <img src="Calculator.png" alt="Calculator" style="width: 30%; height: 288px;" title="Calculator Application (Java Language)" class="htmlimg" onclick="enlargeImage(this)">
+              <img src="Woodland Inventory.png" alt="Woodland Inventory" style="width: 30%; height: 288px;" title="Woodland (Java Language)" class="htmlimg" onclick="enlargeImage(this)">
+              <img src="Interface.png" alt="Interface" style="width: 30%; height: 288px;" title="DSD Interface Propjects (C Language)" class="htmlimg" onclick="enlargeImage(this)"><br><br><br>
+              <img src="WoodlandI.png" alt="Woodland" style="width: 30%; height: 288px;" title="Woodland Inventory (Java Language)" class="htmlimg" onclick="enlargeImage(this)">
+              <br><br><br>
+            </div> 
+        <div id="content-2">
+          <h2>Front End Projects</h2>
+              <img src="Burger Website.png" alt="OnlineFastFoodRestaurantDelivery" style="width: 30%;" title="ECR Online Fast Food Restaurant (HTML & CSS)" class="htmlimg" onclick="enlargeImage(this)">
+              <img src="Weather UI.png" alt="Weather UI" style="width: 30%;" title="Weather User Interface (Figma)" class="htmlimg" onclick="enlargeImage(this)">
+              <img src="Portfolio Past.png" alt="Woodland Inventory" style="width: 30%;" title="Past Portfolio Projects (HTML, CSS & Java Script)" class="htmlimg" onclick="enlargeImage(this)">
+              <br><br><br>
+      </div>
+        <div id="content-3">
+          <h2>Other Projects</h2>
+          <img src="Network Design.png" alt="Networking Design" style="width: 30%;" title="Network Design (Cisco Packet Tracer)" class="htmlimg" onclick="enlargeImage(this)">
+          <br><br><br>
+        </div>
+       </div> 
+    </div> 
+  </div> 
+</div> 
+<footer>
+<a href="Contact.html" class="next2">Next Page</a></footer>
+<!--Java Script-->
+ <!-- Enlarged image container -->
+ <div id="enlarged" class="enlarged-image" onclick="hideImage()">
+  <span class="close-button" onclick="hideImage()">&times;</span>
+  <img id="enlarged-image" src="">
+</div>
+
+<script>
+// Function to enlarge the image
+function enlargeImage(image) {
+    var enlargedImage = document.getElementById("enlarged-image");
+    enlargedImage.src = image.src;
+    var enlargedContainer = document.getElementById("enlarged");
+    enlargedContainer.style.display = "block";
+}
+
+// Function to hide the enlarged image
+function hideImage() {
+    var enlargedContainer = document.getElementById("enlarged");
+    enlargedContainer.style.display = "none";
+}
+</script>
+    </body>
+</html>

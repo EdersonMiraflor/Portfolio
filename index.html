@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="mylogo.jpg">
+    <!--Internal Css Styling-->
+</head>
+
+<body>
+    <!--Container-->
+    <div class="container">
+        <img src="MyPhoto.webp" class="MyImage" alt="MySelfiePicture" style="float: left;">
+     </div>
+ <!--Paragraph-->
+     <div class="MyName" id="myname"><b>Ederson <span style="color: black;">Miraflor</span></b></div> 
+     <div class="Paragraphs">
+        A Front End Developer and Back End Developer
+    <br>
+        and person who love to experience new things as
+    <br>
+        well gain new knowledge in life.
+  </div>
+ <!--Button-->    
+  <button class = "btn" onclick="document.location='about.html'"><i>Click for more Infos</i></button>
+<!--Navigation Bar-->
+  <div class="NB">
+      <li><a href="index">Home</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="portfolio">Portfolio</a></li>
+      <li><a href="Contact">Contact</a></li>
+  </div> 
+<!--Website Logo-->
+   <div><img src="mylogo.jpg" class="logo"></div>        
+    <br><br><br>
+
+    <div class="move"></div>
+
+<footer>
+    <a href="about.html" class="next">Next Page</a>
+</footer>
+<!--Java Script-->
+ <!-- Enlarged image container -->
+ <div id="enlarged" class="enlarged-image" onclick="hideImage()">
+  <span class="close-button" onclick="hideImage()">&times;</span>
+  <img id="enlarged-image" src="">
+</div>
+
+<script>
+// Function to enlarge the image
+function enlargeImage(image) {
+    var enlargedImage = document.getElementById("enlarged-image");
+    enlargedImage.src = image.src;
+    var enlargedContainer = document.getElementById("enlarged");
+    enlargedContainer.style.display = "block";
+}
+
+// Function to hide the enlarged image
+function hideImage() {
+    var enlargedContainer = document.getElementById("enlarged");
+    enlargedContainer.style.display = "none";
+}
+</script>
+    </body>
+</html>

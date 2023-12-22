@@ -1,0 +1,345 @@
+body {
+    background-attachment: fixed;
+    color: white;
+    background-image:url('MyBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+
+.logo{
+    position: absolute;
+    border: 3px solid white;
+    opacity: 0.7;
+    width: 5%;
+    height: 7%;
+    border-radius: 15px;
+    top: 10px;
+    left: 3%;
+}
+/*Image css*/
+.MyImage {
+    position: absolute;
+    top: 250px;
+    right: 120px;
+    max-width: 30%;
+    border-radius: 50px;  
+    border: 10px outset orangered;
+    cursor:help;
+}
+
+/*Paragraph css*/
+.MyName {
+    position: absolute;
+    top:-50px;
+    text-align: left;
+    font-size: 300%;
+    left: 4%;
+    padding-top: 30%;
+    color: white;
+}
+.Paragraphs{
+  position: absolute;
+  left: 4.5%;
+  top: 400px;
+  font-size: 150%;
+  color: white;
+  font-family: sans-serif;
+  }
+
+/*Nav Bar Css*/
+.NB {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    background-color: black;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+.NB li:hover {
+ background-color: lightskyblue;
+}
+
+.NB li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 30px;
+}
+
+.NB li a{
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+}
+.NB li a:active{
+color: blue;
+}
+
+/*Button css*/
+.btn{
+  position: absolute;
+  font-family: monospace;
+  font-size: 25px;
+  top: 600px;
+  left: 50px;
+  padding: 20px 50px 20px 50px;
+  border-radius: 50px;
+  color: rgb(160, 6, 206);
+  background-color: rgb(255, 255, 255);
+  border: 4px solid rgb(248, 5, 111);
+  transition: 0.5s;
+}
+.btn:hover{
+  position: relative;
+  color: rgb(229, 56, 108);
+  top: 620px;
+  font-size: 25px;
+  background-color: rgb(255, 255, 255);
+  border: 4px solid rgb(99, 1, 246);
+  cursor:help;
+}
+
+footer{
+  position: absolute;
+  text-align: center;
+  padding: 20px;
+  top: 130%;
+  width: 1173px;
+  height: 50px;
+  background-color: black;
+  border: 2px solid cyan;
+  transition: 0.9s;
+}
+footer:hover{
+ background-color: cyan;
+ border-color: black;
+}
+.next{
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+.next:hover{
+  color: black;
+  padding: 5px;
+  font-size: 35px;
+  cursor:alias;
+  background-color: cyan;
+  border-radius: 50px;
+ }
+ .next:active{
+ font-size: 30px;
+ }
+ .move {
+  width: 120px;
+  height: 10px;
+  position: relative;
+  top: 25px;
+  left:665px;
+  animation-name: example;
+  animation-duration: 10s;
+}
+
+@keyframes example {
+  0%   {background-color:gray; left:0px; top:25px;}
+  25%  {background-color: lightcoral; left:1095px; top:25px;}
+  50%  {background-color: yellow; left:1030; top:25px;}
+  75%  {background-color:lightgreen; left:630px; top:25px;}
+  100% {background-color:gray; left:0px; top:25px;}
+}
+/*For Laptops*/
+@media screen and (min-width: 1300px) and (max-width: 1500px){
+  .logo{
+    position: absolute;
+    border: 3px solid white;
+    opacity: 0.7;
+    width: 70px;
+    height: 60px;
+    border-radius: 15px;
+    top: 10px;
+    left: 3%;
+}
+  .MyImage {
+    position: relative;
+    align-content: center;
+    top: 170px;
+    left: 910px;
+    width: 320px;
+    height: 330px;
+    border-radius: 50px;  
+    border: 8px outset orangered;
+    cursor:help;
+  }
+  .MyName {
+    position: absolute;
+    top: -190px;
+    text-align: left;
+    font-size: 250%;
+    left: 6%;
+    padding-top: 30%;
+    color: white;
+}
+
+.Paragraphs{
+  position: absolute;
+  left: 80px;
+  top: 280px;
+  font-size: 100%;
+  color: white;
+  font-family: sans-serif;
+}
+
+  .btn{
+    position: absolute;
+    font-family: monospace;
+    font-size: 15px;
+    top: 400px;
+    left: 80px;
+    padding: 20px 50px 20px 50px;
+    border-radius: 50px;
+    color: rgb(160, 6, 206);
+    background-color: rgb(255, 255, 255);
+    border: 4px solid rgb(248, 5, 111);
+    transition: 0.5s;
+  }
+  .btn:hover{
+    position: absolute;
+    color: rgb(229, 56, 108);
+    top: 430px;
+    left: 80px;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    border: 4px solid rgb(99, 1, 246);
+    cursor:help;
+  }
+  footer{
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    left: 7px;
+    top: 110%;
+    width: 1280px;
+    height: 50px;
+    background-color: black;
+    border: 2px solid cyan;
+    transition: 0.9s;
+  }
+  .next{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+  }
+  .next:hover{
+    color: black;
+    padding: 5px;
+    font-size: 35px;
+    cursor:alias;
+    background-color: cyan;
+    border-radius: 50px;
+   }
+   
+   @keyframes example {
+    0%   {background-color:white; left:0px; top:25px;}
+    25%  {background-color: lightcoral; left:1220px; top:25px;}
+    50%  {background-color: yellow; left:1003; top:25px;}
+    75%  {background-color:lightgreen; left:780px; top:25px;}
+    100% {background-color:gray; left:15px; top:25px;}
+  }
+  }
+
+/*For Cellphones*/
+@media screen and (min-width: 500px) and (max-width: 750px){
+footer{
+  position: absolute;
+  text-align: center;
+  padding: 20px;
+  left: 2px;
+  top: 110%;
+  width: 700px;
+  height: 50px;
+  background-color: black;
+  border: 2px solid cyan;
+  transition: 0.9s;
+}
+.btn{
+  position: absolute;
+  font-family: monospace;
+  font-size: 15px;
+  top: 400px;
+  left: 35px;
+  padding: 20px 50px 20px 50px;
+  border-radius: 50px;
+  color: rgb(160, 6, 206);
+  background-color: rgb(255, 255, 255);
+  border: 4px solid rgb(248, 5, 111);
+  transition: 0.5s;
+}
+.btn:hover{
+  position: absolute;
+  color: rgb(229, 56, 108);
+  top: 420px;
+  left: 35px;
+  font-size: 15px;
+  background-color: rgb(255, 255, 255);
+  border: 4px solid rgb(99, 1, 246);
+  cursor:help;
+}
+.MyImage {
+  position: relative;
+  align-content: center;
+  top: 170px;
+  left: 470px;
+  max-width: 50%;
+  height: 270px;
+  border-radius: 50px;  
+  border: 8px outset orangered;
+  cursor:help;
+}
+.Paragraphs{
+  position: absolute;
+  left: 30px;
+  top: 280px;
+  font-size: 100%;
+  color: yellowgreen;
+  font-family: sans-serif;
+  }
+  .MyName {
+    position: absolute;
+    top: -15px;
+    text-align: left;
+    font-size: 250%;
+    left: 4%;
+    padding-top: 30%;
+    color: white;
+}
+.next{
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+.next:hover{
+  color: black;
+  padding: 5px;
+  font-size: 35px;
+  cursor:alias;
+  background-color: cyan;
+  border-radius: 50px;
+ }
+ @keyframes example {
+  0%   {background-color:gray; left:0px; top:25px;}
+  25%  {background-color: lightcoral; left:609px; top:25px;}
+  50%  {background-color: yellow; left:403; top:25px;}
+  75%  {background-color:lightgreen; left:190px; top:25px;}
+  100% {background-color:gray; left:0px; top:25px;}
+}
+}
+

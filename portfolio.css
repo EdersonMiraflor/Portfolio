@@ -1,0 +1,327 @@
+body {
+    background-attachment: fixed;
+    color: white;
+    background-image:url('MyBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+
+.logo{
+    position: absolute;
+    border: 3px solid white;
+    opacity: 0.7;
+    width: 5%;
+    height: 7%;
+    border-radius: 15px;
+    top: 10px;
+    left: 3%;
+}
+
+/*Nav Bar Css*/
+.NB {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    background-color: black;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+.NB li:hover {
+ background-color: lightskyblue;
+}
+
+.NB li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 30px;
+}
+
+.NB li a{
+    text-decoration:none;
+    color: white;
+    font-size: 28px;
+}
+.NB li a:active{
+color: blue;
+}
+
+/*Tab css */
+.tab {
+    position: absolute;
+    left:30px;
+    top: 280px;
+    width: 95%;
+    overflow: hidden;
+    border: 3px solid black;
+    background-color: white;
+    text-align: center;
+    color: white;
+  }
+  
+  .tabcontent {
+    text-align: left;
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+  }
+  
+  /* Fade in Tabs */
+  @-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  .row{
+    width: 500px;
+  }
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+h1 {
+  color: black;
+  background-color: white;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.6);
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 2em;
+  line-height: 1.3em;
+  font-weight: bold;
+  margin-top: 0.67em;
+}
+.container {
+  background-color: black;
+  min-width: 520px; 
+  max-width: 500%;
+}
+p{
+  margin: 0 0 20px; 
+  line-height: 1.5;
+  font-weight: 300;
+}
+/*Content Color Text*/
+.content {
+  background-color: none;
+  color: white;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+.content > div {
+  display: none;
+  padding: 20px 25px 5px;
+}
+input {
+  display: none;
+}
+label {
+  display: inline-block; 
+  padding: 15px 25px; 
+  font-weight: 600; 
+  text-align: center;
+  border-bottom: 1px solid transparent;
+  transition: all .3s ease-out 0.1s;
+}
+label:hover {
+  color: #fff; 
+  cursor: pointer;
+}
+input:checked + label {
+  background: #ffffff;
+  color: #fd7034;
+  border-bottom: 1px solid;
+}
+
+#tab-1:checked ~ .content #content-1,
+#tab-2:checked ~ .content #content-2,
+#tab-3:checked ~ .content #content-3,
+#tab-4:checked ~ .content #content-4 {
+  display: block;
+  animation-name: inUp;
+  animation-timing-function: ease-in-out;
+  animation-duration: .6s;
+}
+
+@media screen and (max-width: 400px) { label {padding: 15px 10px;} }
+
+@keyframes inUp {
+  0%{
+    opacity: 0;
+    transform: translateY(100px)
+  }
+    90%{
+    transform: translateY(-10px)
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+/*img hover scrolling down effect*/
+
+  /* CSS to style the enlarged image and close button */
+  .enlarged-image {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 20%;/**/
+    width: 40%;
+    height: 73%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    z-index: 9999;
+}
+
+/* CSS Item */
+.enlarged-image img {
+    width: 150%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 8px outset orangered;
+}
+
+
+/*CSS Image*/
+.htmlimg{
+    position: relative;
+    top: 0px;
+    width:30%;
+    height: 300px;
+    opacity: 0.7;
+    transition: transform 0.3s ease-in-out;
+}
+.htmlimg:hover{
+    transform: translateY(20px);
+    border: 3px solid yellow;
+}
+
+ /*On going progress text*/
+ footer{
+  position: absolute;
+  text-align: center;
+  padding: 20px;
+  top: 150%;
+  width: 1173px;
+ background-color: black;
+  height: 50px;
+  border: 2px solid cyan;
+  transition: 0.9s;
+}
+footer:hover{
+background-color: cyan;
+border-color: black;
+}
+
+.next2{
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+.next2:hover{
+  color: black;
+  padding: 5px;
+  font-size: 35px;
+  cursor:alias;
+  background-color: cyan;
+  border-radius: 50px;
+}
+.next2:active{
+  font-size: 30px;
+  }
+
+/*For Laptops*/
+@media screen and (min-width: 1300px) and (max-width: 1500px){
+  .logo{
+    position: absolute;
+    border: 3px solid white;
+    opacity: 0.7;
+    width: 70px;
+    height: 60px;
+    border-radius: 15px;
+    top: 10px;
+    left: 3%;
+}
+.tab {
+  position: absolute;
+  left:27px;
+  top: 280px;
+  width: 95%;
+  overflow: hidden;
+  border: 3px solid black;
+  background-color: white;
+  text-align: center;
+  color: white;
+} 
+  footer{
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    left: 7px;
+    top: 200%;
+    width: 1280px;
+    height: 50px;
+    background-color: black;
+    border: 2px solid cyan;
+    transition: 0.9s;
+  }
+  .next{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+  }
+  .next:hover{
+    color: black;
+    padding: 5px;
+    font-size: 35px;
+    cursor:alias;
+    background-color: cyan;
+    border-radius: 50px;
+   }
+  }
+
+/*For Phone*/
+@media (max-width: 768px){
+  .tab {
+    position: absolute;
+    left:15px;
+    top: 280px;
+    width: 95%;
+    overflow: hidden;
+    border: 3px solid black;
+    background-color: white;
+    text-align: center;
+    color: white;
+  }
+  footer{
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    top: 150%;
+    width: 700px;
+   background-color: black;
+    height: 50px;
+    border: 2px solid cyan;
+    transition: 0.9s;
+  }
+}

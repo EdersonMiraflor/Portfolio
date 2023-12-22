@@ -1,0 +1,487 @@
+body {
+    background-attachment: fixed;
+    color: white;
+    background-image:url('MyBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+
+.logo{
+    position: absolute;
+    border: 3px solid white;
+    opacity: 0.7;
+    width: 5%;
+    height: 7%;
+    border-radius: 15px;
+    top: 10px;
+    left: 3%;
+}
+/*Image css*/
+.MyImage {
+    position: absolute;
+    top: 250px;
+    right: 360px;
+    max-width: 30%;
+    border-radius: 50px;  
+    border: 10px outset yellow;
+    cursor:help;
+    transition: 1.5s;
+}
+.MyImage:hover { 
+  border: 10px outset gray;
+}
+
+
+/*Informations Section*/
+.MyName {
+    position: absolute;
+    top: 420px;
+    text-align: left;
+    font-size: 250%;
+    left: 525px;
+    padding-top: 30%;
+    color: white;
+    font-family: serif;
+    transition: 1.5s;
+}
+.MyName:hover {
+  color: yellow;
+}
+
+    .MyEducation {
+      position: absolute;
+      top: 580px;
+      text-align: left;
+      font-size: 250%;
+      left: 280px;
+      padding-top: 30%;
+      color: white;
+      font-family: serif;
+    }
+
+.text2{
+  position: absolute;
+  left: 200px;
+  top: 1000px;
+  font-size: 150%;
+  color: white;
+  font-family: serif;
+  }
+
+  .MySkills {
+    position: absolute;
+    top: 580px;
+    text-align: left;
+    font-size: 250%;
+    left: 870px;
+    padding-top: 30%;
+    color: white;
+    font-family: serif;
+  }
+
+.text3{
+  position: absolute;
+  left: 750px;
+  top: 1000px;
+  font-size: 150%;
+  color: white;
+  font-family: serif;
+  }
+
+  
+/*Nav Bar Css*/
+.NB {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    background-color: black;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+.NB li:hover {
+ background-color: lightskyblue;
+}
+
+.NB li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 30px;
+}
+
+.NB li a{
+    text-decoration:none;
+    color: white;
+    font-size: 28px;
+}
+.NB li a:active{
+color: blue;
+}
+
+
+footer{
+  position: absolute;
+  text-align: center;
+  padding: 20px;
+  left: 7px;
+  top: 2630px;
+  width: 1160px;
+  height: 50px;
+  background-color: black;
+  border: 2px solid cyan;
+  transition: 0.9s;
+}
+footer:hover{
+background-color: cyan;
+  border-color: black;
+  }
+.next4{
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+.next4:hover{
+  color: black;
+  padding: 5px;
+  font-size: 35px;
+  cursor:alias;
+  background-color: cyan;
+  border-radius: 50px;
+ }
+ .next4:active{
+  font-size: 30px;
+  }
+ /*Experiment*/
+ .imageslidetext {
+  position: relative;
+  top: 20px;
+  width: 30%;
+}
+
+.slideimage {
+  position: relative;
+  display: block;
+  width: 400px;
+  height: 300px;
+}
+.slideoverlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: gold;
+  overflow: hidden;
+  width: 335%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.slideoverlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: gold;
+  overflow: hidden;
+  width: 335%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.imageslidetext:hover .slideoverlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.slidetext {
+  white-space: nowrap; 
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+/*For Laptops*/
+@media screen and (min-width: 1300px) and (max-width: 1500px){
+  .logo{
+    position: absolute;
+    border: 3px solid white;
+    opacity: 0.7;
+    width: 70px;
+    height: 60px;
+    border-radius: 15px;
+    top: 10px;
+    left: 3%;
+}
+
+.imageslidetext {
+  position: relative;
+  top: 20px;
+  width: 30%;
+}
+
+
+.slideoverlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: gold;
+  overflow: hidden;
+  width: 335%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.imageslidetext:hover .slideoverlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.slidetext {
+  white-space: nowrap; 
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.slideimage {
+  position: relative;
+  display: block;
+  width: 300px;
+  height: 200px;
+}
+  .MyImage {
+    position: relative;
+    align-content: center;
+    top: 170px;
+    left: 540px;
+    width: 300px;
+    height: 330px;
+    border-radius: 50px;  
+    border: 8px outset yellow;
+  }
+  .MyName {
+    position: absolute;
+    top: 130px;
+    text-align: left;
+    font-size: 250%;
+    left: 550px;
+    padding-top: 30%;
+    color: white;
+}
+
+
+.MyEducation {
+  position: absolute;
+  top: 250px;
+  text-align: left;
+  font-size: 250%;
+  left: 230px;
+  padding-top: 30%;
+  color: white;
+  font-family: serif;
+}
+
+.text2{
+position: absolute;
+left: 200px;
+top: 700px;
+font-size: 150%;
+color: white;
+font-family: serif;
+}
+
+.MySkills {
+  position: absolute;
+  top: 250px;
+  text-align: left;
+  font-size: 250%;
+  left: 970px;
+  padding-top: 30%;
+  color: white;
+  font-family: serif;
+}
+
+.text3{
+position: absolute;
+left: 900px;
+top: 700px;
+font-size: 150%;
+color: white;
+font-family: serif;
+}
+
+  footer{
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    left: 7px;
+    top: 2000px;
+    width: 1280px;
+    height: 50px;
+    background-color: black;
+    border: 2px solid cyan;
+    transition: 0.9s;
+  }
+  .next{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+  }
+  .next:hover{
+    color: black;
+    padding: 5px;
+    font-size: 35px;
+    cursor:alias;
+    background-color: cyan;
+    border-radius: 50px;
+   }
+  }
+
+/*For Phone*/
+@media screen and (min-width: 500px) and (max-width: 750px){
+  .MyImage {
+    position: absolute;
+    top: 300px;
+    left: 470px;
+    max-width: 30%;
+    border-radius: 50px;  
+    border: 10px outset yellow;
+    cursor:help;
+}
+/*Informations Section*/
+.MyName {
+  position: absolute;
+  top: 100px;
+  text-align: left;
+  font-size: 250%;
+  left: 4%;
+  padding-top: 30%;
+  color: white;
+  font-family: serif;
+}
+
+.text1{
+  position: absolute;
+  left: 4.5%;
+  top: 430px;
+  font-size: 150%;
+  color: white;
+  font-family: serif;
+  }
+
+.MyEducation {
+  position: absolute;
+  top: 270px;
+  text-align: left;
+  font-size: 250%;
+  left: 4%;
+  padding-top: 30%;
+  color: white;
+  font-family: serif;
+}
+
+.text2{
+position: absolute;
+left: 4.5%;
+top: 63%;
+font-size: 150%;
+color: white;
+font-family: serif;
+}
+
+.MySkills {
+  position: absolute;
+  top: 42em;
+  text-align: left;
+  font-size: 250%;
+  left: 4%;
+  padding-top: 30%;
+  color: white;
+  font-family: serif;
+}
+
+.text3{
+position: absolute;
+left: 4.5%;
+top: 237%;
+font-size: 150%;
+color: white;
+font-family: serif;
+}
+
+footer{
+  position: absolute;
+  text-align: center;
+  padding: 20px;
+  top: 300px;
+  width: 700px;
+  height: 50px;
+  background-color: black;
+  border: 2px solid cyan;
+  transition: 0.9s;
+}
+ /*Experiment*/
+ .imageslidetext {
+  position: relative;
+  width: 50%;
+}
+
+.slideimage {
+  display: block;
+  width: 70%;
+  height: auto;
+}
+
+.slideoverlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: gold;
+  overflow: hidden;
+  width: 70%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.imageslidetext:hover .slideoverlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.slidetext {
+  white-space: nowrap; 
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.next{
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+}
